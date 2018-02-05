@@ -1,0 +1,294 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+// .wrapper {
+//   margin: 0 auto;
+// }
+
+.clear {
+  clear: both;
+}
+
+p {
+  color: #696A6A;
+}
+
+
+/* HEADER */
+
+header {
+  height: 120px;
+}
+
+header img {
+  float: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav {
+  float: right;
+  margin-top: 50px;
+}
+
+header nav ul li {
+  float: left;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* MAIN IMAGE */
+
+
+
+#main-image h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 150px 0 40px 0;
+  margin-bottom: 20px;
+}
+
+.button-1 {
+  display: block;
+  width: 120px;
+  height: 50px;
+  background: #ff7a00;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.button-1:hover {
+  background: #02b8dd;
+}
+
+
+/* SERVICES */
+
+#services {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+#services .title h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+#services .title p {
+  font-size: 15px;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#services svg {
+  color: #5cadd3;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#services .title p {
+  text-align: center;
+  font-size: 15px;
+}
+
+#services .conteneur {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#services .element-image:nth-child(1) {
+  align-self: flex-start;
+}
+
+#services .element-text:nth-child(2) {
+  width: 600px;
+}
+
+#services .UX, .IU {
+  margin-bottom: 4%;
+}
+
+#services .icones {
+  float: left;
+  margin-right: 15px;
+}
+
+#services h3 {
+  font-size: 15px;
+  font-family: Verdana;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#services p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+
+
+
+/* PROJETS */
+
+#projets {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 15px;
+  background-color: #fff;
+}
+
+#projets .title h1 {
+  font-size: 45px;
+  font-family: ARIAL;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+#projets .fa-circle {
+  color: #5cadd3;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#projets .title p {
+  font-size: 15px;
+  color: #717479;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#projets ul {
+  display: inline-block;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #E0E0E0;
+  padding-left: 0px;
+  margin-bottom: 36px;
+  border-radius: 5px;
+  color: #64686D;
+  font-size: 12px;
+}
+
+#projets .active {
+  background-color: #5cadd3;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#projets li {
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#projets .img_container {
+  width: 20%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+#projets .img_container img {
+  width: 100%;
+}
+
+#projets .img_container:hover .imgHover {
+  opacity: 1;
+}
+
+#projets .imgHover {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  bottom: 15px;
+  height: 95px;
+  transition: .5s ease;
+}
+
+#projets .text {
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* CONTACT */
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+
+.button-3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 11px;
+  background-color: #02b8dd;
+  border-radius: 3px;
+  border-style: none;
+}
+
+.button-3:hover {
+  background-color: #444;
+}
+
+
+/* FOOTER */
+
+footer {
+  height: 50px;
+  background-color: #444;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  color: #777;
+}
