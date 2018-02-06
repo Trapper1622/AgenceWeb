@@ -11,7 +11,6 @@
 
 <!--TODO: HEADER -->
     <header>
-      <div class="wrapper">
         <img src="img/logo.png" alt="logo" />
         <nav>
           <ul>
@@ -21,21 +20,22 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
     </header>
 <!--TODO: FIN HEADER -->
 
 <!--TODO: SLIDER PRINCIPAL -->
     <section id="main-image">
-      <div class="wrapper">
-
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="img/bg1.jpg" alt="1" /></div>
+          <div class="slide"><img src="img/bg2.jpg" alt="2" /></div>
+        </div>
       </div>
     </section>
 <!--TODO: FIN SLIDER PRINCIPAL -->
-
+    <div class="divider"></div>
 <!--TODO: SERVICES -->
     <section id="services">
-      <div class="wrapper">
         <div class="title">
           <h1>Nos Services</h1>
           <i class="fas fa-circle"></i>
@@ -71,13 +71,11 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!--TODO: FIN SERVICES -->
-
+    <div class="divider"></div>
     <!--TODO: PROJETS -->
     <section id="projets">
-      <div class="wrapper">
         <div class="title">
           <h1>Nos Projets</h1>
           <i class="fas fa-circle"></i>
@@ -87,10 +85,16 @@
         </div>
         <nav>
           <ul>
-            <li class="active">All Works</li>
-            <li>Creative</li>
-            <li>Corporate</li>
-            <li>Portfolio</li>
+            <div class="block">
+              <li class="active">All Works</li>
+              <i class="activeli my_caret fas fa-caret-down"></i>
+              <li>Creative</li>
+              <i class="my_caret fas fa-caret-down"></i>
+              <li>Corporate</li>
+              <i class="my_caret fas fa-caret-down"></i>
+              <li>Portfolio</li>
+              <i class="my_caret fas fa-caret-down"></i>
+            </div>
           </ul>
         </nav>
         <div class="exemple">
@@ -100,6 +104,7 @@
                <div class="text">
                  "un site créé par nos mains pour vos yeux"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -108,6 +113,7 @@
                <div class="text">
                  "Site internet pour enfant"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -116,6 +122,7 @@
                <div class="text">
                  "Le site internet de Pompadour"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -124,6 +131,7 @@
                <div class="text">
                  "un site internet d'architecte"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -132,6 +140,7 @@
                <div class="text">
                  "un site internet pour vos sacs personnalisés"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -140,6 +149,7 @@
                <div class="text">
                  "un site internet pour voyager"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -148,6 +158,7 @@
                <div class="text">
                  "un site internet pour décoller"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
           <div class="img_container">
@@ -156,18 +167,17 @@
                <div class="text">
                  "un site internet pour vos fournitures de bureau"
                </div>
+               <i class="fas fa-eye"></i>
              </div>
           </div>
         </div>
-      </div>
     </section>
     <!--TODO: FIN PROJETS -->
-
+    <div class="divider"></div>
     <!--TODO: CONTACT -->
     <section id="contact">
-      <div class="wrapper">
         <div class="carte">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9743.150501481297!2d3.6755312266162505!3d43.4469005483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517747493786" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9743.150501481297!2d3.6755312266162505!3d43.4469005483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517747493786" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="background">
           <h3>Contact Info</h3>
@@ -177,24 +187,19 @@
             <br />
             <span class="tel">Tel :</span> 01 02 03 04 05
           </p>
+          <form>
+            <input type="text" id="nom" placeholder="Name">
+            <br />
+            <input type="text" id="email" placeholder="Email">
+            <br />
+            <input type="text" id="subject" placeholder="Subject">
+            <br />
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <input type="submit" value="Send Message" class="button-3">
+          </form>
         </div>
-        <form>
-          <input type="text" id="nom" placeholder="Name">
-          <br />
-          <input type="text" id="email" placeholder="Email">
-          <br />
-          <input type="text" id="subject" placeholder="Subject">
-          <br />
-          <textarea name="message" id="message" placeholder="Message"></textarea>
-          <input type="submit" value="Send Message" class="button-3">
-        </form>
-      </div>
     </section>
     <!--TODO: FIN CONTACT -->
-
-    <footer>
-      <div class="copyright">Copyright © 2018. Tous droits réservés.</div>
-    </footer>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
