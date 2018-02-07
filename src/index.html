@@ -6,14 +6,13 @@
     <link href="css/style.css" rel="stylesheet" />
     <title>Agence Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
 
   <body>
 
 <!--TODO: HEADER -->
-
     <header>
-
     		<!--Logo-->
             <div id="logo_webagency">
                 <a href="#slider"><img src="../img/logo.png" alt="logo principal du site webagency"></a>
@@ -28,16 +27,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
     	</header>
 
-<!--TODO: FIN HEADER -->
-
 <!--TODO: SLIDER PRINCIPAL -->
-
     <section id="slider">
-
-        <!-- First slide -->
+        <!-- 1er slide -->
         <div id="one" class="slide">
             <div class="header_slide"></div>
             <div class="body_slide">
@@ -46,14 +40,14 @@
                     <a class="next" href="#two"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
                 </nav>
                 <div class="text_slide">
-                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                    <h1><span>WebAgency</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                     <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                     <p><a href="#services">Plus d'infos</a></p>
                 </div>
             </div>
         </div>
 
-        <!-- Second slide -->
+        <!-- 2eme slide -->
         <div id="two" class="slide">
             <div class="header_slide"></div>
             <div class="body_slide">
@@ -62,19 +56,21 @@
                     <a class="next" href="#one"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
                 </nav>
                 <div class="text_slide">
-                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-                    <p>Découvrez ici nos services et nos dernières réalisations</p>
+                    <h1><span>WebAgency</span> : Nous vous aidons à vous créer une renommée sur le web</h1>
+                    <p>
+                      Vous pourrez avoir un contact privilégié avec vos clients et capter de nouveaux clients.
+                    </p>
                     <p><a href="#services">Plus d'infos</a></p>
                 </div>
             </div>
         </div>
-
     </section>
 
-<!--TODO: FIN SLIDER PRINCIPAL -->
     <div class="divider"></div>
+
 <!--TODO: SERVICES -->
     <section id="services">
+      <!-- header des services -->
       <div class="title">
         <h1>Nos Services</h1>
         <div class="rond_bleu"></div>
@@ -82,6 +78,7 @@
           Nous réalisons des sites internet souples et modernes. Nous vous accompagnons dans l'élaboration d'une <strong>maquette</strong> jusqu'à la <strong>mise en ligne de votre site internet</strong>.
         </p>
       </div>
+      <!-- Image + texte -->
       <section>
         <div class="service_main">
           <img src="img/main-feature.png" alt="screen" />
@@ -120,122 +117,129 @@
         </div>
       </section>
     </section>
-    <!--TODO: FIN SERVICES -->
+
     <div class="divider"></div>
+
     <!--TODO: PROJETS -->
     <section id="projets">
-        <div class="title">
-          <h1>Nos Projets</h1>
-          <div class="rond_bleu"></div>
-          <p>
-            Fort d'une solide expérience ainsi que d'une équipe jeune et dynamique, nous vous invitons à visiter nos dernières créations.
-          </p>
+      <!-- header des projets -->
+      <div class="title">
+        <h1>Nos Projets</h1>
+        <div class="rond_bleu"></div>
+        <p>
+          Fort d'une solide expérience ainsi que d'une équipe jeune et dynamique, nous vous invitons à visiter nos dernières créations.
+        </p>
+      </div>
+      <!-- menu des projets -->
+      <nav>
+        <ul>
+          <div class="block">
+            <li class="active">All Works</li>
+            <i class="activeli my_caret fas fa-caret-down"></i>
+            <li>Creative</li>
+            <i class="my_caret fas fa-caret-down"></i>
+            <li>Corporate</li>
+            <i class="my_caret fas fa-caret-down"></i>
+            <li>Portfolio</li>
+            <i class="my_caret fas fa-caret-down"></i>
+          </div>
+        </ul>
+      </nav>
+      <!-- images du projet -->
+      <div class="exemple">
+        <div class="img_container">
+          <img src="img/01.jpg" class="glasses" alt="visage lunette" />
+           <div class="imgHover inactive">
+             <div class="text">
+               "un site créé par nos mains pour vos yeux"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
         </div>
-        <nav>
-          <ul>
-            <div class="block">
-              <li class="active">All Works</li>
-              <i class="activeli my_caret fas fa-caret-down"></i>
-              <li>Creative</li>
-              <i class="my_caret fas fa-caret-down"></i>
-              <li>Corporate</li>
-              <i class="my_caret fas fa-caret-down"></i>
-              <li>Portfolio</li>
-              <i class="my_caret fas fa-caret-down"></i>
-            </div>
-          </ul>
-        </nav>
-        <div class="exemple">
-          <div class="img_container">
-            <img src="img/01.jpg" class="glasses" alt="visage lunette" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site créé par nos mains pour vos yeux"
-               </div>
-               <i class="fas fa-eye"></i>
+        <div class="img_container">
+          <img src="img/02.jpg" class="rabbit" alt="lapin rose" />
+           <div class="imgHover">
+             <div class="text">
+               "Site internet pour enfant"
              </div>
-          </div>
-          <div class="img_container">
-            <img src="img/02.jpg" class="rabbit" alt="lapin rose" />
-             <div class="imgHover">
-               <div class="text">
-                 "Site internet pour enfant"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/03.jpg" class="pompadour" alt="pompadour" />
-             <div class="imgHover">
-               <div class="text">
-                 "Le site internet de Pompadour"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/04.jpg" class="book" alt="carnet" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site internet d'architecte"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/05.jpg" class="bag" alt="sac" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site internet pour vos sacs personnalisés"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/06.jpg" class="city" alt="ville" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site internet pour voyager"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/07.jpg" class="rocket" alt="fusée" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site internet pour décoller"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
-          <div class="img_container">
-            <img src="img/08.jpg" class="supplies" alt="fournitures" />
-             <div class="imgHover">
-               <div class="text">
-                 "un site internet pour vos fournitures de bureau"
-               </div>
-               <i class="fas fa-eye"></i>
-             </div>
-          </div>
+             <i class="fas fa-eye"></i>
+           </div>
         </div>
+        <div class="img_container">
+          <img src="img/03.jpg" class="pompadour" alt="pompadour" />
+           <div class="imgHover">
+             <div class="text">
+               "Le site internet de Pompadour"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/04.jpg" class="book" alt="carnet" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet d'architecte"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/05.jpg" class="bag" alt="sac" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour vos sacs personnalisés"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/06.jpg" class="city" alt="ville" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour voyager"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/07.jpg" class="rocket" alt="fusée" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour décoller"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/08.jpg" class="supplies" alt="fournitures" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour vos fournitures de bureau"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+      </div>
     </section>
-    <!--TODO: FIN PROJETS -->
+
     <div class="divider"></div>
+
     <!--TODO: CONTACT -->
     <section id="contact">
+      <!-- Carte googleMap -->
         <div class="carte">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9743.150501481297!2d3.6755312266162505!3d43.4469005483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517747493786" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9743.150501481297!2d3.6755312266162505!3d43.4469005483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517747493786" width="100%" height="650" frameborder="0" allowfullscreen></iframe>
         </div>
+        <!-- Contact sur fond -->
         <div class="background">
-          <h3>Contact Info</h3>
-          <h4>WebAgency SAS</h4>
-          <p>
-            25 Rue d'Hauteville 75010 Paris
-            <br />
-            <span class="tel">Tel :</span> 01 02 03 04 05
-          </p>
           <form>
+            <h3>Contact Info</h3>
+            <h4>WebAgency SAS</h4>
+            <p>
+              25 Rue d'Hauteville 75010 Paris
+              <br />
+              <span class="tel">Tel :</span> 01 02 03 04 05
+            </p>
             <input type="text" id="nom" placeholder="Name">
             <br />
             <input type="text" id="email" placeholder="Email">
@@ -247,9 +251,6 @@
           </form>
         </div>
     </section>
-    <!--TODO: FIN CONTACT -->
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   </body>
 </html>
