@@ -22,6 +22,36 @@ p {
   margin-top: 20px;
 }
 
+.rond_bleu {
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #5cadd3;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid #fff;
+}
+
+.rond_bleu::before {
+  content: "";
+  border-left: 100px solid #cdcdcd;
+  height: 1.4px;
+  margin-top: 7px;
+  position: absolute;
+  left: 160%;
+}
+
+.rond_bleu::after {
+  content: "";
+  border-right: 100px solid #cdcdcd;
+  height: 1.4px;
+  margin-top: 7px;
+  position: absolute;
+  right: 160%;
+}
+
 /* HEADER */
 header {
   height: 120px; }
@@ -68,9 +98,11 @@ header nav ul li a:hover {
 }
 
 .slider {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
 }
 
 .slides {
@@ -114,7 +146,7 @@ header nav ul li a:hover {
 #services .title h1 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 45px;
   }
@@ -124,12 +156,6 @@ header nav ul li a:hover {
   text-align: center;
   margin-left: 25%;
   margin-right: 25%; }
-
-#services svg {
-  color: #5cadd3;
-  display: inline-block;
-  width: 100%;
-}
 
 #services .title p {
   text-align: center;
@@ -190,19 +216,19 @@ header nav ul li a:hover {
 #projets .title h1 {
   font-size: 45px;
   font-family: ARIAL;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
   font-weight: bold; }
 
 #projets .fa-circle {
   color: #5cadd3;
   display: inline-block;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 #projets .title p {
   font-size: 15px;
   color: #717479;
-  margin-bottom: 2%;
+  margin-bottom: 50px;
   margin-left: 25%;
   margin-right: 25%; }
 
