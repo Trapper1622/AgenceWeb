@@ -540,7 +540,7 @@ input[type="text"] {
   		display: block;
   		background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
         width: 40px;
-  		height: 40px;
+  		  height: 40px;
         border-bottom: solid 4px rgb(29,139,179);
         border-radius: 15px;
         margin-right: 10px;
@@ -643,10 +643,4 @@ input[type="text"] {
     header, .header_slide {
         height: 60px;
     }
-}
-
-@media screen and (min-width: 48em) {
-    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
-        top: 100px;
-}
 }
