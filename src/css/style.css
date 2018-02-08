@@ -412,82 +412,66 @@ header a {
   margin-top: 50px;
 }
 
-#contact .carte {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
+#contact {
+    position: relative;
 }
 
-#contact .background {
-  margin-top: 50px;
-  float: right;
-  background: #fff;
-  opacity: 0.8;
-  width: 350px;
-  margin-right: 70px;
+.google_maps, #conteneur_contact {
+    width: 100%;
+    position: absolute;
+    height: 600px;
 }
 
-#contact p, h3, h4 {
-  text-align: left;
-  margin-left: 15px;
+#conteneur_contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-#contact h3 {
-  font-size: 25px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+form {
+    background-color: rgba(255,255,255, .8);
+    width: 300px;
+    height: 70%;
+    margin: 40px 150px;
+    padding: 20px;
+    padding-right: 30px;
+    border-radius: 3px;
 }
 
-#contact h4 {
-  color: #64686D;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
+form h2 {
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    font-size: 180%;
 }
 
-#contact p {
-  color: #64686D;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#contact p .tel {
-  border-bottom-style: dotted;
-}
-
-textarea {
-  width: 250px;
-  height: 10em;
-  border: 1px solid #ddd;
-  margin-left: 15px;
-  padding: 10px;
-  font-size: 15px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  font-size: 15px;
-  border: 1px solid #ddd;
-  margin-bottom: 5px;
-  margin-left: 15px;
-}
-
-.button-3 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 11px;
-  background-color: #02b8dd;
-  border-radius: 3px;
-  border-style: none;
-  margin-left: 15px;
-  margin-top: 20px;
+form p {
   margin-bottom: 15px;
 }
 
-.button-3:hover {
-  background-color: #444; }
+input {
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.bouton {
+    color: #fff;
+    background-color: rgb(92,173,211);
+    border-bottom: 3px solid rgb(70,140,173);
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
 
 /* ------------------- MEDIA QUERIES ------------------- */
 
@@ -514,6 +498,9 @@ input[type="text"] {
     }
     .text_slide {
         max-width: 450px;
+    }
+    #projets .img_container {
+      width: 33.33%;
     }
 }
 
@@ -619,13 +606,8 @@ input[type="text"] {
     padding-top: 100px;
     }
 
-    #projets ul {
-        flex-direction: column; /* menu interne aux projets verticalisé */
-        width: 80%;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 5px;
-        overflow: hidden;
+    #projets .img_container {
+      width: 50%;
     }
 
     #services img {
