@@ -118,11 +118,6 @@ header a {
 	  display: none;
 }
 
-header nav a:hover {
-  border-top: 4px solid #53abd9;
-  padding-top: 35px;
-}
-
 /* ------------------- SLIDER ------------------- */
 
 #slider, .slide {
@@ -195,10 +190,10 @@ header nav a:hover {
     background: rgba(0,0,0,.8);
 }
 .prev {
-    left: 5px;
+    left: -25px;
 }
 .next {
-    right: 5px;
+    right: -25px;
 }
 .prev i {
     padding-left: 20px;
@@ -240,6 +235,28 @@ header nav a:hover {
   height: 100%;
 }
 
+#services_body {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#conteneur_services {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+#services .services_description {
+  display: flex;
+}
+
+#services .services_text {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
 #services .title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -260,34 +277,13 @@ header nav a:hover {
   margin-top: 30px;
  }
 
-#services .service_main {
-  margin-top: 30px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-}
-
-#services .service_main img {
-  width: 510px;
-  height: 319px;
-}
-
-#services ul {
-  padding-left: 10%;
-  margin-top: 20px;
-  max-width: 35%;
-}
-
-#services fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-
-#services li {
-  margin: 20px 0;
-  padding-left: 25px;
-}
+ .services_logo {
+    display: flex;
+    align-self: center; /* Centrer le logo fontawesome */
+    justify-content: center;
+    position: relative; /* Positionnement bulle_bleue */
+    margin-left: 50px;
+ }
 
 #services .fa-cubes, .fa-chart-pie, .fa-chart-line {
   padding: 20px 11px;
@@ -306,21 +302,6 @@ header nav a:hover {
   position: absolute;
   left: -14px;
   top: 25px;
-}
-
-#services li h3 {
-  margin-bottom: 0px;
-  color: #000;
-  font-size: 1.2em;
-}
-
-#services li p {
-  text-align: justify;
-}
-
-#services .service_main p {
-  margin-top: 15px;
-  width: 100%;
 }
 
 /* ------------------- PROJETS ------------------- */
@@ -532,10 +513,10 @@ input[type="text"] {
         margin: 0;
         width: 80%; /* Adaptation formulaire de contact, prend toute la largeur */
     }
-    #services .service_main {
+    #services_body {
         flex-wrap: wrap; /* Présentation des services en colonnes */
     }
-    #contact .background {
+    #conteneur_contact {
         justify-content: center;
     }
     .body_slide {
@@ -547,4 +528,138 @@ input[type="text"] {
     .text_slide {
         max-width: 450px;
     }
+}
+
+/* Sur Desktop et tablettes format paysage, border bleue sur l'élément survolé du menu principal + texte slider */
+@media all and (min-width: 780px) {
+    header nav a:hover {
+        border-top: 3px solid rgb(92,173,211);
+        padding-top: 38px;
+    }
+}
+
+/* Sur smartphones et tablettes format portrait, mis en place du menu hamburger */
+@media screen and (max-width: 780px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+	nav ul {
+        display: none; /* Suppression du menu complet */
+	}
+    /* Mise en place du logo du menu hamburger */
+	label { /* Le carré */
+  		display: block;
+  		background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
+        width: 40px;
+  		height: 40px;
+        border-bottom: solid 4px rgb(29,139,179);
+        border-radius: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        padding-top: 5px;
+	}
+    label:after{ /* Mise en place des 3 traits*/
+        content:'';
+        display: block;
+        width: 20px; /* 1er trait */
+        height: 2px; /* 1er trait */
+        background: white;
+        margin-top: 10px; margin-left: 10px;
+        box-shadow: 0px 7px 0px white, 0px 14px 0px white; /* les 2 traits suivants */
+    }
+    /* Apparition du menu hamburger lors du clic */
+	[type="checkbox"]:checked ~ ul {
+        display: block;
+  		  z-index: 5;
+  		  position: absolute;
+        top : 0px;
+        right: 60px;
+        left: 0px;
+        min-height: 100px;
+        background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+	}
+	header nav ul li {
+  		width: 100%;
+  		text-align: left;
+        margin-left: 0px;
+        padding: 2px;
+        text-transform: uppercase;
+        font-size: 90%;
+    }
+    header nav ul li a {
+        color: white;
+    }
+}
+
+/* Sur smartphones */
+@media all and (max-width: 480px) {
+
+    /* Adaptation taille polices */
+    h1, h2 {
+        font-size: 170%;
+    }
+     .text_slide {
+        font-size: 90%;
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+    #logo_webagency, #logo_webagency img {
+        max-width: 220px; /* Adaptation taille du logo du menu principal */
+    }
+
+    .body_slide {
+        height: 350px; /* Adaptation taille du slider */
+    }
+
+    #slider, .slide {
+        height: 450px; /* Adaptation taille du slider */
+    }
+
+    .body_slide nav {
+        display: none; /* Suppression fonction navigation du slider */
+    }
+
+    #services, #projets {
+    padding-top: 100px;
+    }
+
+    #projets ul {
+        flex-direction: column; /* menu interne aux projets verticalisé */
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #services img {
+        max-width: 440px;
+    }
+
+    .services_description {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+/* Diminution de la taille du menu fixe sur très petits écrans de smartphones */
+@media and all (max-width: 380px) {
+    header, .header_slide {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+        top: 100px;
+}
 }
