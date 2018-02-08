@@ -1,16 +1,5 @@
 /* ------------------- GENERAL ------------------- */
 
-@font-face {
-	font-family: 'dayrom';
-	src: url('../fonts/dayrom.eot') format('eot');
-	src: url('../fonts/dayrom.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/dayrom.svg#fontawesome') format('svg'),
-		 url('../fonts/dayrom.ttf') format('truetype'),
-		 url('../fonts/dayrom.woff') format('woff'),
-		 url('../fonts/dayrom.woff2') format('woff2'),
-		 url('../fonts/dayrom.otf') format('truetype');
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +11,7 @@ body {
 }
 
 h1, h2, h3, h4, p, ul {
-  font-family: 'dayrom', arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -30,7 +19,7 @@ p {
 }
 
 /* Titre section visible lors de la navigation par le menu */
-#services, #projets {
+#services, #projets, #contact {
     padding-top: 120px;
 }
 #services h1, #projets h1 {
@@ -255,6 +244,7 @@ header a {
 #services .services_text {
   margin-left: 20px;
   margin-top: 50px;
+	max-width: 600px;
 }
 
 #services .title h1 {
@@ -307,12 +297,8 @@ header a {
 /* ------------------- PROJETS ------------------- */
 
 #projets {
-  margin-bottom: 50px;
-}
-
-#projets {
   text-align: center;
-  margin-top: 5px;
+  margin-bottom: 50px;
   background-color: #fff; }
 
 #projets .title h1 {
@@ -324,6 +310,7 @@ header a {
 #projets .title p {
   font-size: 15px;
   color: #717479;
+  margin-top: 30px;
   margin-bottom: 50px;
   margin-left: 25%;
   margin-right: 25%; }
