@@ -18,7 +18,7 @@ p {
   color: #696A6A;
 }
 
-/* Titre section visible lors de la navigation par le menu */
+/* Titre visible au dessus lors de la navigation par le menu */
 #services, #projets, #contact {
     padding-top: 120px;
 }
@@ -27,12 +27,12 @@ p {
     padding-top: 0;
 }
 
-/* Pas de cadre gris sur IE sur img cliquable*/
+/* Pas de cadre gris sur IE sur img cliquable */
 a img {
     border: 0;
 }
 
-
+/* traits separateur + rond bleu */
 .divider {
   width: 60%;
   height: 3px;
@@ -75,7 +75,7 @@ a img {
 
 /* ------------------- HEADER ------------------- */
 
-/* Menu Fixe qui suit la navigation */
+/* Menu Fixe */
 
 header {
     position: fixed;
@@ -89,8 +89,6 @@ header {
 
 }
 
-/* Mise en place du menu */
-
 header ul {
     list-style-type: none;
     display: flex;
@@ -102,7 +100,7 @@ header a {
     color: rgb(80,80,80);
 }
 
-/* Logo navigation sur mobile non visible version desktop */
+/* sup case sur mobile */
 #nav, label {
 	  display: none;
 }
@@ -110,7 +108,7 @@ header a {
 /* ------------------- SLIDER ------------------- */
 
 #slider, .slide {
-    height: 650px; /* Taille comprenant la slide + l'en-tête qui passe sous le menu */
+    height: 650px; /* Taille slide + menu */
     color: white;
     font-weight: bold;
     overflow: hidden;
@@ -127,7 +125,7 @@ header a {
 }
 
 .body_slide {
-    position: relative; /* Positionnement des liens de navigation en absolute */
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
@@ -144,7 +142,7 @@ header a {
     background-size: cover;
 }
 
-/* Effet transition au changement de slide */
+/* Effet transition slide */
 #one {
     opacity: 1;
     position: absolute;
@@ -160,7 +158,7 @@ header a {
     opacity: 1;
 }
 
-/* Mise en place des liens de navigation du slider */
+/*  liens de nav slider */
 .slide nav a {
     z-index: 2;
     background: rgba(0,0,0,.4);
@@ -191,7 +189,7 @@ header a {
     padding-right: 20px;
 }
 
-/* Texte du slider */
+/* Texte slider */
 .text_slide {
     margin: 10%;
     max-width: 700px;
@@ -206,7 +204,7 @@ header a {
      color: #fff;
 }
 
-/* Effet bouton cliquable */
+/* Effet bouton */
 .text_slide a {
     color: white;
     background-color: rgb(92,173,211);
@@ -269,9 +267,9 @@ header a {
 
  .services_logo {
     display: flex;
-    align-self: center; /* Centrer le logo fontawesome */
+    align-self: center;
     justify-content: center;
-    position: relative; /* Positionnement bulle_bleue */
+    position: relative;
     margin-left: 50px;
  }
 
@@ -318,8 +316,8 @@ header a {
 #projets ul {
   display: inline-block;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style-type: none;
   background-color: #E0E0E0;
   padding-left: 0px;
@@ -389,7 +387,7 @@ header a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center; }
 
@@ -403,7 +401,6 @@ header a {
     background-color: #4794B1;
     font-size: 12px;
     padding: 12px;
-    /* border-width: 2px; */
   }
 
 /* ------------------- CONTACT ------------------- */
@@ -478,23 +475,23 @@ textarea {
 /* Sur tablettes et smartphones */
 @media all and (max-width: 1024px) {
     h1, h2 {
-        font-size: 200%; /* Adaptation tailles des titres, plus petits*/
+        font-size: 200%; /* Taille titre */
     }
     form {
         margin: 0;
-        width: 80%; /* Adaptation formulaire de contact, prend toute la largeur */
+        width: 80%; /* formulaire toute largeur */
     }
     #services_body {
-        flex-wrap: wrap; /* Présentation des services en colonnes */
+        flex-wrap: wrap; /* services en colonnes */
     }
     #conteneur_contact {
         justify-content: center;
     }
     .body_slide {
-        height: 450px; /* Slider plus petit */
+        height: 450px; /* petit slider */
     }
     #slider, .slide {
-        height: 550px; /* Slider plus petit */
+        height: 550px; /* petit slider */
     }
     .text_slide {
         max-width: 450px;
@@ -504,7 +501,7 @@ textarea {
     }
 }
 
-/* Sur Desktop et tablettes format paysage, border bleue sur l'élément survolé du menu principal + texte slider */
+/* Sur Desktop et tablettes format paysage, bordure bleue hover du menu principal */
 @media all and (min-width: 780px) {
     header nav a:hover {
         border-top: 3px solid rgb(92,173,211);
@@ -512,7 +509,7 @@ textarea {
     }
 }
 
-/* Sur smartphones et tablettes format portrait, mis en place du menu hamburger */
+/* Sur smartphones et tablettes format portrait, menu hamburger */
 @media screen and (max-width: 780px) {
 
     header {
@@ -520,10 +517,10 @@ textarea {
     }
 
 	nav ul {
-        display: none; /* Suppression du menu complet */
+        display: none; /* Suppression du menu */
 	}
-    /* Mise en place du logo du menu hamburger */
-	label { /* Le carré */
+    /* logo hamburger */
+	label { /* carré */
   		display: block;
   		background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
         width: 40px;
@@ -534,7 +531,7 @@ textarea {
         cursor: pointer;
         padding-top: 5px;
 	}
-    label:after{ /* Mise en place des 3 traits*/
+    label:after{ /* 3 traits */
         content:'';
         display: block;
         width: 20px; /* 1er trait */
@@ -543,7 +540,7 @@ textarea {
         margin-top: 10px; margin-left: 10px;
         box-shadow: 0px 7px 0px white, 0px 14px 0px white; /* les 2 traits suivants */
     }
-    /* Apparition du menu hamburger lors du clic */
+    /* Apparition menu hamburger au clic */
 	[type="checkbox"]:checked ~ ul {
         display: block;
   		  z-index: 5;
@@ -574,7 +571,7 @@ textarea {
 /* Sur smartphones */
 @media all and (max-width: 480px) {
 
-    /* Adaptation taille polices */
+    /* taille text */
     h1, h2 {
         font-size: 170%;
     }
@@ -587,19 +584,19 @@ textarea {
     }
 
     #logo_webagency, #logo_webagency img {
-        max-width: 220px; /* Adaptation taille du logo du menu principal */
+        max-width: 220px; /* taille logo principal */
     }
 
     .body_slide {
-        height: 350px; /* Adaptation taille du slider */
+        height: 350px; /* taille slider */
     }
 
     #slider, .slide {
-        height: 450px; /* Adaptation taille du slider */
+        height: 450px; /* taille slider */
     }
 
     .body_slide nav {
-        display: none; /* Suppression fonction navigation du slider */
+        display: none; /* Suppression navigation slider */
     }
 
     #services, #projets {
@@ -620,7 +617,7 @@ textarea {
     }
 }
 
-/* Diminution de la taille du menu fixe sur très petits écrans de smartphones */
+/* reduction taille menu fixe très petits écrans */
 @media and all (max-width: 380px) {
     header, .header_slide {
         height: 60px;
