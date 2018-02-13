@@ -597,20 +597,12 @@ textarea {
 /* Sur smartphones */
 @media all and (max-width: 480px) {
 
-    /* taille text */
-    h1, h2 {
-        font-size: 170%;
-    }
-     .text_slide {
-        font-size: 90%;
-    }
-
     h3 {
         margin: 10px;
     }
 
     #logo_webagency, #logo_webagency img {
-        max-width: 220px; /* taille logo principal */
+        max-width: 150px; /* taille logo principal */
     }
 
     .body_slide {
