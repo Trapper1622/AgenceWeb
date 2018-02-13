@@ -8,6 +8,7 @@
 body {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, p, ul {
@@ -41,6 +42,25 @@ a img {
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+#one .dividerBlueLeft {
+  width: 50%;
+  height: 3px;
+  background-color: rgb(92,173,211);
+  opacity: 1;
+  position: absolute;
+  top: 547px;
+}
+
+#two .dividerBlueRight {
+  width: 50%;
+  height: 3px;
+  background-color: rgb(92,173,211);
+  opacity: 1;
+  position: absolute;
+  margin-left: 50%;
+  top: 547px;
 }
 
 .rond_bleu {
@@ -275,7 +295,7 @@ header a {
 
 #services .fa-cubes, .fa-chart-pie, .fa-chart-line {
   padding: 20px 11px;
-  border: 1px solid gray;
+  border: 1px solid #D5DBDB;
   color: #53abd9;
   border-radius: 100%;
   margin-left: -1.3em;
@@ -296,8 +316,8 @@ header a {
 
 #projets {
   text-align: center;
-  margin-bottom: 50px;
-  background-color: #fff; }
+  background-color: #E5E7E9;
+}
 
 #projets .title h1 {
   font-size: 45px;
@@ -399,14 +419,14 @@ header a {
     border: 2px solid #fff;
     border-radius: 52px;
     background-color: #4794B1;
-    font-size: 12px;
-    padding: 12px;
+    font-size: 15px;
+    padding: 15px;
   }
 
 /* ------------------- CONTACT ------------------- */
 
 #contact {
-  margin-top: 50px;
+  background-color: #E5E7E9;
 }
 
 #contact {
@@ -495,6 +515,12 @@ textarea {
     }
     .text_slide {
         max-width: 450px;
+    }
+    #one .dividerBlueLeft {
+      top: 447px;
+    }
+    #two .dividerBlueRight {
+      top: 447px;
     }
     #projets .img_container {
       width: 33.33%;
@@ -614,6 +640,9 @@ textarea {
     .services_description {
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    #services .services_text {
+      margin-top: 70px;
     }
 }
 
