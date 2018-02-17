@@ -433,16 +433,19 @@ header a {
     position: relative;
 }
 
-.google_maps, #conteneur_contact {
+.google_maps {
     width: 100%;
     position: absolute;
     height: 600px;
 }
 
 #conteneur_contact {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 600px;
+  position: absolute;
 }
 
 form {
