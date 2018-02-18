@@ -20,20 +20,24 @@ p {
 }
 
 /* Titre visible au dessus lors de la navigation par le menu */
+
 #services, #projets, #contact {
-    padding-top: 120px;
+  padding-top: 120px;
 }
+
 #services h1, #projets h1 {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Pas de cadre gris sur IE sur img cliquable */
+
 a img {
-    border: 0;
+  border: 0;
 }
 
 /* traits separateur + rond bleu */
+
 .divider {
   width: 60%;
   height: 3px;
@@ -47,7 +51,7 @@ a img {
 #one .dividerBlueLeft {
   width: 50%;
   height: 3px;
-  background-color: rgb(92,173,211);
+  background-color: rgb(92, 173, 211);
   opacity: 1;
   position: absolute;
   top: 547px;
@@ -56,7 +60,7 @@ a img {
 #two .dividerBlueRight {
   width: 50%;
   height: 3px;
-  background-color: rgb(92,173,211);
+  background-color: rgb(92, 173, 211);
   opacity: 1;
   position: absolute;
   margin-left: 50%;
@@ -98,142 +102,154 @@ a img {
 /* Menu Fixe */
 
 header {
-    position: fixed;
-    z-index: 4;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
+  position: fixed;
+  z-index: 4;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 header ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 header a {
-    padding: 0px 10px;
-    text-decoration: none;
-    color: rgb(80,80,80);
+  padding: 0px 10px;
+  text-decoration: none;
+  color: rgb(80, 80, 80);
 }
 
 /* sup case sur mobile */
+
 #nav, label {
-	  display: none;
+  display: none;
 }
 
 /* ------------------- SLIDER ------------------- */
 
 #slider, .slide {
-    height: 650px; /* Taille slide + menu */
-    color: white;
-    font-weight: bold;
-    overflow: hidden;
-    width: 100%;
+  height: 650px;
+  /* Taille slide + menu */
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  width: 100%;
 }
 
 #slider {
-    position: relative;
+  position: relative;
 }
 
 /* Slide visible sous le menu lors du clic sur les ancres */
+
 .header_slide {
-    height: 100px;
+  height: 100px;
 }
 
 .body_slide {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 550px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 550px;
 }
 
 #one .body_slide {
-    background: url('../img/bg1.jpg') no-repeat center;
-    background-size: cover;
+  background: url('../img/bg1.jpg') no-repeat center;
+  background-size: cover;
 }
 
 #two .body_slide {
-    background: url('../img/bg2.jpg') no-repeat center;
-    background-size: cover;
+  background: url('../img/bg2.jpg') no-repeat center;
+  background-size: cover;
 }
 
 /* Effet transition slide */
+
 #one {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #two {
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
 }
+
 #two:target {
-    opacity: 1;
+  opacity: 1;
 }
 
 /*  liens de nav slider */
+
 .slide nav a {
-    z-index: 2;
-    background: rgba(0,0,0,.4);
-    color: #fff;
-    text-decoration: none;
-    height: 70px;
-    width: 70px;
-    border-radius: 35px;
-    position: absolute;
-    top: 45%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
+  text-decoration: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  position: absolute;
+  top: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .slide nav a:hover {
-    background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, .8);
 }
+
 .prev {
-    left: -25px;
+  left: -25px;
 }
+
 .next {
-    right: -25px;
+  right: -25px;
 }
+
 .prev i {
-    padding-left: 20px;
+  padding-left: 20px;
 }
+
 .next i {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 /* Texte slider */
-.text_slide {
-    margin: 10%;
-    max-width: 700px;
-}
-.text_slide h1 span {
-    color: #53abd9;
-    font-size: 45px;
 
+.text_slide {
+  margin: 10%;
+  max-width: 700px;
 }
+
+.text_slide h1 span {
+  color: #53abd9;
+  font-size: 45px;
+}
+
 .text_slide p {
-     margin-bottom: 40px;
-     color: #fff;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 /* Effet bouton */
-.text_slide a {
-    color: white;
-    background-color: rgb(92,173,211);
-    padding: 10px 15px;
-    border-radius: 3px;
-    border-bottom: 3px solid rgb(68,148,187);
-    text-decoration: none;
-}
 
+.text_slide a {
+  color: white;
+  background-color: rgb(92, 173, 211);
+  padding: 10px 15px;
+  border-radius: 3px;
+  border-bottom: 3px solid rgb(68, 148, 187);
+  text-decoration: none;
+}
 
 /* ------------------- SERVICES ------------------- */
 
@@ -243,10 +259,10 @@ header a {
 }
 
 #services_body {
-	display: flex;
-	justify-content: center;
-	width: 80%;
-	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #conteneur_services {
@@ -262,7 +278,7 @@ header a {
 #services .services_text {
   margin-left: 20px;
   margin-top: 50px;
-	max-width: 600px;
+  max-width: 600px;
 }
 
 #services .title h1 {
@@ -271,7 +287,7 @@ header a {
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 45px;
-  }
+}
 
 #services .title p {
   font-size: 15px;
@@ -283,15 +299,15 @@ header a {
   text-align: center;
   font-size: 15px;
   margin-top: 30px;
- }
+}
 
- .services_logo {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    position: relative;
-    margin-left: 50px;
- }
+.services_logo {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 50px;
+}
 
 #services .fa-cubes, .fa-chart-pie, .fa-chart-line {
   padding: 20px 11px;
@@ -323,7 +339,8 @@ header a {
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 #projets .title p {
   font-size: 15px;
@@ -331,7 +348,8 @@ header a {
   margin-top: 30px;
   margin-bottom: 50px;
   margin-left: 25%;
-  margin-right: 25%; }
+  margin-right: 25%;
+}
 
 #projets ul {
   display: inline-block;
@@ -344,20 +362,22 @@ header a {
   margin-bottom: 36px;
   border-radius: 5px;
   color: #64686D;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 #projets .active {
   background-color: #53abd9;
   color: #fff;
   border-radius: 5px;
   border-bottom: 2px solid #468CAD;
- }
+}
 
 #projets li {
   display: inline-block;
   padding: 20px 20px 20px 20px;
   cursor: pointer;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 #projets .block {
   display: inline-block;
@@ -381,13 +401,16 @@ header a {
   margin-right: 15px;
   margin-bottom: 15px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+}
 
 #projets .img_container img {
-  width: 100%; }
+  width: 100%;
+}
 
 #projets .img_container:hover .imgHover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #projets .imgHover {
   background: rgba(0, 0, 0, 0.5);
@@ -398,7 +421,8 @@ header a {
   height: 95px;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
-  transition: .5s ease; }
+  transition: .5s ease;
+}
 
 #projets .text {
   position: absolute;
@@ -409,19 +433,20 @@ header a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
-  #projets .exemple svg {
-    position: absolute;
-    top: -24px;
-    right: 6px;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 52px;
-    background-color: #4794B1;
-    font-size: 15px;
-    padding: 15px;
-  }
+#projets .exemple svg {
+  position: absolute;
+  top: -24px;
+  right: 6px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 52px;
+  background-color: #4794B1;
+  font-size: 15px;
+  padding: 15px;
+}
 
 /* ------------------- CONTACT ------------------- */
 
@@ -430,13 +455,13 @@ header a {
 }
 
 #contact {
-    position: relative;
+  position: relative;
 }
 
 .google_maps {
-    width: 100%;
-    position: absolute;
-    height: 600px;
+  width: 100%;
+  position: absolute;
+  height: 600px;
 }
 
 #conteneur_contact {
@@ -449,19 +474,19 @@ header a {
 }
 
 form {
-    background-color: rgba(255,255,255, .8);
-    width: 300px;
-    height: 70%;
-    margin: 40px 150px;
-    padding: 20px;
-    padding-right: 30px;
-    border-radius: 3px;
+  background-color: rgba(255, 255, 255, .8);
+  width: 300px;
+  height: 70%;
+  margin: 40px 150px;
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 3px;
 }
 
 form h2 {
-    padding: 0px;
-    margin: 0px 0px 5px 0px;
-    font-size: 180%;
+  padding: 0px;
+  margin: 0px 0px 5px 0px;
+  font-size: 180%;
 }
 
 form p {
@@ -469,181 +494,191 @@ form p {
 }
 
 input {
-    width: 100%;
-    height: 25px;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    padding-left: 10px;
+  width: 100%;
+  height: 25px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding-left: 10px;
 }
 
 textarea {
-    width: 100%;
-    height: 100px;
-    border-radius: 3px;
-    padding-left: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 .bouton {
-    color: #fff;
-    background-color: rgb(92,173,211);
-    border-bottom: 3px solid rgb(70,140,173);
-    border-radius: 3px;
-    padding: 5px 15px;
-    text-decoration: none;
+  color: #fff;
+  background-color: rgb(92, 173, 211);
+  border-bottom: 3px solid rgb(70, 140, 173);
+  border-radius: 3px;
+  padding: 5px 15px;
+  text-decoration: none;
 }
 
 /* ------------------- MEDIA QUERIES ------------------- */
 
 /* Sur tablettes et smartphones */
+
 @media all and (max-width: 1024px) {
-    h1, h2 {
-        font-size: 200%; /* Taille titre */
-    }
-    form {
-        margin: 0;
-        width: 80%; /* formulaire toute largeur */
-    }
-    #services_body {
-        flex-wrap: wrap; /* services en colonnes */
-    }
-    #conteneur_contact {
-        justify-content: center;
-    }
-    .body_slide {
-        height: 450px; /* petit slider */
-    }
-    #slider, .slide {
-        height: 550px; /* petit slider */
-    }
-    .text_slide {
-        max-width: 450px;
-    }
-    #one .dividerBlueLeft {
-      top: 447px;
-    }
-    #two .dividerBlueRight {
-      top: 447px;
-    }
-    #projets .img_container {
-      width: 33.33%;
-    }
+  h1, h2 {
+    font-size: 200%;
+    /* Taille titre */
+  }
+  form {
+    margin: 0;
+    width: 80%;
+    /* formulaire toute largeur */
+  }
+  #services_body {
+    flex-wrap: wrap;
+    /* services en colonnes */
+  }
+  #conteneur_contact {
+    justify-content: center;
+  }
+  .body_slide {
+    height: 450px;
+    /* petit slider */
+  }
+  #slider, .slide {
+    height: 550px;
+    /* petit slider */
+  }
+  .text_slide {
+    max-width: 450px;
+  }
+  #one .dividerBlueLeft {
+    top: 447px;
+  }
+  #two .dividerBlueRight {
+    top: 447px;
+  }
+  #projets .img_container {
+    width: 33.33%;
+  }
 }
 
 /* Sur Desktop et tablettes format paysage, bordure bleue hover du menu principal */
+
 @media all and (min-width: 780px) {
-    header nav a:hover {
-        border-top: 3px solid rgb(92,173,211);
-        padding-top: 38px;
-    }
+  header nav a:hover {
+    border-top: 3px solid rgb(92, 173, 211);
+    padding-top: 38px;
+  }
 }
 
 /* Sur smartphones et tablettes format portrait, menu hamburger */
+
 @media screen and (max-width: 780px) {
-
-    header {
-        justify-content: space-between;
-    }
-
-	nav ul {
-        display: none; /* Suppression du menu */
-	}
-    /* logo hamburger */
-	label { /* carré */
-  		display: block;
-  		background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
-        width: 40px;
-  		  height: 40px;
-        border-bottom: solid 4px rgb(29,139,179);
-        border-radius: 15px;
-        margin-right: 10px;
-        cursor: pointer;
-        padding-top: 5px;
-	}
-    label:after{ /* 3 traits */
-        content:'';
-        display: block;
-        width: 20px; /* 1er trait */
-        height: 2px; /* 1er trait */
-        background: white;
-        margin-top: 10px; margin-left: 10px;
-        box-shadow: 0px 7px 0px white, 0px 14px 0px white; /* les 2 traits suivants */
-    }
-    /* Apparition menu hamburger au clic */
-	[type="checkbox"]:checked ~ ul {
-        display: block;
-  		  z-index: 5;
-  		  position: absolute;
-        top : 0px;
-        right: 60px;
-        left: 0px;
-        min-height: 100px;
-        background-image: linear-gradient(rgb(31,178,177),rgb(52,158,196));
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-	}
-	header nav ul li {
-  		width: 100%;
-  		text-align: left;
-        margin-left: 0px;
-        padding: 2px;
-        text-transform: uppercase;
-        font-size: 90%;
-    }
-    header nav ul li a {
-        color: white;
-    }
+  header {
+    justify-content: space-between;
+  }
+  nav ul {
+    display: none;
+    /* Suppression du menu */
+  }
+  /* logo hamburger */
+  label {
+    /* carré */
+    display: block;
+    background-image: linear-gradient(rgb(31, 178, 177), rgb(52, 158, 196));
+    width: 40px;
+    height: 40px;
+    border-bottom: solid 4px rgb(29, 139, 179);
+    border-radius: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  label:after {
+    /* 3 traits */
+    content: '';
+    display: block;
+    width: 20px;
+    /* 1er trait */
+    height: 2px;
+    /* 1er trait */
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 7px 0px white, 0px 14px 0px white;
+    /* les 2 traits suivants */
+  }
+  /* Apparition menu hamburger au clic */
+  [type="checkbox"]:checked~ul {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    left: 0px;
+    min-height: 100px;
+    background-image: linear-gradient(rgb(31, 178, 177), rgb(52, 158, 196));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav ul li {
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 90%;
+  }
+  header nav ul li a {
+    color: white;
+  }
 }
 
 /* Sur smartphones */
+
 @media all and (max-width: 480px) {
-
-    h3 {
-        margin: 10px;
-    }
-
-    #logo_webagency, #logo_webagency img {
-        max-width: 150px; /* taille logo principal */
-    }
-
-    .body_slide {
-        height: 350px; /* taille slider */
-    }
-
-    #slider, .slide {
-        height: 450px; /* taille slider */
-    }
-
-    .body_slide nav {
-        display: none; /* Suppression navigation slider */
-    }
-
-    #services, #projets {
+  h3 {
+    margin: 10px;
+  }
+  #logo_webagency, #logo_webagency img {
+    max-width: 150px;
+    /* taille logo principal */
+  }
+  .body_slide {
+    height: 350px;
+    /* taille slider */
+  }
+  #slider, .slide {
+    height: 450px;
+    /* taille slider */
+  }
+  .body_slide nav {
+    display: none;
+    /* Suppression navigation slider */
+  }
+  #services, #projets {
     padding-top: 100px;
-    }
-
-    #projets .img_container {
-      width: 50%;
-    }
-
-    #services img {
-        max-width: 440px;
-    }
-
-    .services_description {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    #services .services_text {
-      margin-top: 70px;
-    }
+  }
+  #projets .img_container {
+    width: 50%;
+  }
+  #services img {
+    max-width: 440px;
+  }
+  .services_description {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #services .services_text {
+    margin-top: 70px;
+  }
 }
 
 /* reduction taille menu fixe très petits écrans */
+
 @media and all (max-width: 380px) {
-    header, .header_slide {
-        height: 60px;
-    }
+  header, .header_slide {
+    height: 60px;
+  }
 }
