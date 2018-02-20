@@ -523,10 +523,6 @@ textarea {
 /* Sur tablettes et smartphones */
 
 @media all and (max-width: 1024px) {
-  h1, h2 {
-    font-size: 200%;
-    /* Taille titre */
-  }
   form {
     margin: 0;
     width: 80%;
