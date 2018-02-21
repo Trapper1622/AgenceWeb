@@ -1,264 +1,264 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebAgency : L'agence de tous vos projets</title>
+    <meta name="description" content="WebAgency. Un site sur les services offerts par une agence web, sites, référencement, design, réseaux sociaux" />
 
-<head>
-  <meta charset="utf-8">
-  <title>WebAgency : L'agence de tous vos projets</title>
-  <meta name="description" content="WebAgency. Un site sur les services offerts par une agence web, sites, référencement, design, réseaux sociaux" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="css/style.css" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</head>
+  <body>
 
-<body>
+<!--TODO: HEADER -->
+    <header>
+    		<!--Logo-->
+            <div id="logo_webagency">
+                <a href="#slider"><img src="img/logo.png" alt="logo principal du site webagency"></a>
+            </div>
+    		<!--Menu-->
+            <nav>
+                <input type="checkbox" id="nav" /><label for="nav"></label>
+                <ul>
+                    <li><a class="active" href="#slider">Accueil</a></li>
+                    <li><a href="#espaceServices">Services</a></li>
+                    <li><a href="#espaceProjets">Portfolio</a></li>
+                    <li><a href="#espaceContact">Contact</a></li>
+                </ul>
+            </nav>
+    	</header>
 
-  <!--TODO: HEADER -->
-  <header>
-    <!--Logo-->
-    <div id="logo_webagency">
-      <a href="#slider"><img src="img/logo.png" alt="logo principal du site webagency"></a>
-    </div>
-    <!--Menu-->
-    <nav>
-      <input type="checkbox" id="nav" /><label for="nav"></label>
-      <ul>
-        <li><a class="active" href="#slider">Accueil</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projets">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!--TODO: SLIDER PRINCIPAL -->
-  <section id="slider">
-    <!-- 1er slide -->
-    <div id="one" class="slide">
-      <div class="header_slide"></div>
-      <div class="body_slide">
-        <nav>
-          <a class="prev" href="#two"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
-          <a class="next" href="#two"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
-        </nav>
-        <div class="text_slide">
-          <h1><span>WebAgency</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
-          <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-          <p><a href="#services">Plus d'infos</a></p>
+<!--TODO: SLIDER PRINCIPAL -->
+    <section id="slider">
+        <!-- 1er slide -->
+        <div id="one" class="slide">
+            <div class="header_slide"></div>
+            <div class="body_slide">
+                <nav>
+                    <a class="prev" href="#two"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                    <a class="next" href="#two"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                </nav>
+                <div class="text_slide">
+                    <h1><span>WebAgency</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                    <p><a href="#services">Plus d'infos</a></p>
+                </div>
+                <div class="dividerBlueLeft"></div>
+            </div>
         </div>
-        <div class="dividerBlueLeft"></div>
-      </div>
-    </div>
 
-    <!-- 2eme slide -->
-    <div id="two" class="slide">
-      <div class="header_slide"></div>
-      <div class="body_slide">
-        <nav>
-          <a class="prev" href="#one"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
-          <a class="next" href="#one"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
-        </nav>
-        <div class="text_slide">
-          <h1><span>WebAgency</span> : Nous vous aidons à vous créer une renommée sur le web</h1>
-          <p>
-            Vous pourrez avoir un contact privilégié avec vos clients et capter de nouveaux clients.
-          </p>
-          <p><a href="#services">Plus d'infos</a></p>
+        <!-- 2eme slide -->
+        <div id="two" class="slide">
+            <div class="header_slide"></div>
+            <div class="body_slide">
+                <nav>
+                    <a class="prev" href="#one"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                    <a class="next" href="#one"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                </nav>
+                <div class="text_slide">
+                    <h1><span>WebAgency</span> : Nous vous aidons à vous créer une renommée sur le web</h1>
+                    <p>
+                      Vous pourrez avoir un contact privilégié avec vos clients et capter de nouveaux clients.
+                    </p>
+                    <p><a href="#services">Plus d'infos</a></p>
+                </div>
+                <div class="dividerBlueRight"></div>
+            </div>
         </div>
-        <div class="dividerBlueRight"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-  <!--TODO: SERVICES -->
-  <section id="services">
-    <div id="conteneur_services">
-      <!-- SERVICES HEADER -->
-      <div class="title">
-        <h1>Nos Services</h1>
-        <div class="rond_bleu"></div>
-        <p>
-          Nous réalisons des sites internet souples et modernes. Nous vous accompagnons dans l'élaboration d'une <strong>maquette</strong> jusqu'à la <strong>mise en ligne de votre site internet</strong>.
-        </p>
-      </div>
-      <div id="services_body">
-        <!-- SERVICES IMG -->
-        <div>
-          <img src="img/main-feature.png" alt="" />
-        </div>
-        <!-- SERVICES TEXTE -->
-        <div>
-          <div class="services_description">
-            <div class="services_logo">
-              <i class="fa-li fas fa-lg fa-chart-line"></i>
-              <div class="cercle_rond-bleu"></div>
-            </div>
-            <div class="services_text">
-              <h3>UX design</h3>
-              <p>
-                Vous souhaitez créer un site Internet, performant, révélant votre professionnalisme ? Nous vous aiderons à répondre à vos attentes.
-              </p>
-            </div>
-          </div>
-          <div class="services_description">
-            <div class="services_logo">
-              <i class="fa-li fas fa-lg fa-cubes"></i>
-              <div class="cercle_rond-bleu"></div>
-            </div>
-            <div class="services_text">
-              <h3>UI design</h3>
-              <p>
-                Le monde du Web est en constante évolution, les tablettes, les smartphones prennent une part importante dans la navigation, c'est pour cela qu'il est fondamental, d'avoir un site qui s'adapte à tous ces écrans.
-              </p>
-            </div>
-          </div>
-          <div class="services_description">
-            <div class="services_logo">
-              <i class="fa-li fas fa-lg fa-chart-pie"></i>
-              <div class="cercle_rond-bleu"></div>
-            </div>
-            <div class="services_text">
-              <h3>SEO</h3>
-              <p>
-                Vous pouvez avoir le plus joli site Internet du monde, si il n'est pas référencé correctement, vous n'attirerez aucun nouveau client. Nous vous ferons connaitre.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--TODO: PROJETS -->
-  <section id="projets">
-    <!-- header des projets -->
+<!--TODO: SERVICES -->
+<div id="espaceServices" class="espace"></div>
+<section id="services">
+  <div id="conteneur_services">
+    <!-- SERVICES HEADER -->
     <div class="title">
-      <h1>Nos Projets</h1>
+      <h1>Nos Services</h1>
       <div class="rond_bleu"></div>
       <p>
-        Fort d'une solide expérience ainsi que d'une équipe jeune et dynamique, nous vous invitons à visiter nos dernières créations.
+        Nous réalisons des sites internet souples et modernes. Nous vous accompagnons dans l'élaboration d'une <strong>maquette</strong> jusqu'à la <strong>mise en ligne de votre site internet</strong>.
       </p>
     </div>
-    <!-- menu des projets -->
-    <nav>
-      <ul>
-        <div class="block">
-          <li class="active">All Works</li>
-          <i class="activeli my_caret fas fa-caret-down"></i>
-          <li>Creative</li>
-          <i class="my_caret fas fa-caret-down"></i>
-          <li>Corporate</li>
-          <i class="my_caret fas fa-caret-down"></i>
-          <li>Portfolio</li>
-          <i class="my_caret fas fa-caret-down"></i>
-        </div>
-      </ul>
-    </nav>
-    <!-- images du projet -->
-    <div class="exemple">
-      <div class="img_container">
-        <img src="img/01.jpg" alt="visage lunette" />
-        <div class="imgHover inactive">
-          <div class="text">
-            "un site créé par nos mains pour vos yeux"
-          </div>
-          <i class="fas fa-eye"></i>
-        </div>
+    <div id="services_body">
+      <!-- SERVICES IMG -->
+      <div>
+        <img src="img/main-feature.png" alt="" />
       </div>
-      <div class="img_container">
-        <img src="img/02.jpg" alt="lapin rose" />
-        <div class="imgHover">
-          <div class="text">
-            "Site internet pour enfant"
+      <!-- SERVICES TEXTE -->
+      <div>
+        <div class="services_description">
+          <div class="services_logo">
+            <i class="fa-li fas fa-lg fa-chart-line"></i>
+            <div class="cercle_rond-bleu"></div>
           </div>
-          <i class="fas fa-eye"></i>
+          <div class="services_text">
+            <h3>UX design</h3>
+            <p>
+              Vous souhaitez créer un site Internet, performant, révélant votre professionnalisme ? Nous vous aiderons à répondre à vos attentes.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="img_container">
-        <img src="img/03.jpg" alt="pompadour" />
-        <div class="imgHover">
-          <div class="text">
-            "Le site internet de Pompadour"
+        <div class="services_description">
+          <div class="services_logo">
+            <i class="fa-li fas fa-lg fa-cubes"></i>
+            <div class="cercle_rond-bleu"></div>
           </div>
-          <i class="fas fa-eye"></i>
+          <div class="services_text">
+            <h3>UI design</h3>
+            <p>
+              Le monde du Web est en constante évolution, les tablettes, les smartphones prennent une part importante dans la navigation, c'est pour cela qu'il est fondamental, d'avoir un site qui s'adapte à tous ces écrans.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="img_container">
-        <img src="img/04.jpg" alt="carnet" />
-        <div class="imgHover">
-          <div class="text">
-            "un site internet d'architecte"
+        <div class="services_description">
+          <div class="services_logo">
+            <i class="fa-li fas fa-lg fa-chart-pie"></i>
+            <div class="cercle_rond-bleu"></div>
           </div>
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-      <div class="img_container">
-        <img src="img/05.jpg" alt="sac" />
-        <div class="imgHover">
-          <div class="text">
-            "un site internet pour vos sacs personnalisés"
+          <div class="services_text">
+            <h3>SEO</h3>
+            <p>
+              Vous pouvez avoir le plus joli site Internet du monde, si il n'est pas référencé correctement, vous n'attirerez aucun nouveau client. Nous vous ferons connaitre.
+            </p>
           </div>
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-      <div class="img_container">
-        <img src="img/06.jpg" alt="ville" />
-        <div class="imgHover">
-          <div class="text">
-            "un site internet pour voyager"
-          </div>
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-      <div class="img_container">
-        <img src="img/07.jpg" alt="fusée" />
-        <div class="imgHover">
-          <div class="text">
-            "un site internet pour décoller"
-          </div>
-          <i class="fas fa-eye"></i>
-        </div>
-      </div>
-      <div class="img_container">
-        <img src="img/08.jpg" alt="fournitures" />
-        <div class="imgHover">
-          <div class="text">
-            "un site internet pour vos fournitures de bureau"
-          </div>
-          <i class="fas fa-eye"></i>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!--TODO: CONTACT -->
-  <section id="contact">
-    <!-- Carte googleMap -->
-    <iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9743.150501481297!2d3.6755312266162505!3d43.4469005483306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517747493786" width="100%" height="650" frameborder="0"
-      allowfullscreen></iframe>
-    <!-- Contact sur fond -->
-    <div id="conteneur_contact">
-      <form>
-        <h2>Nous Contacter</h2>
-        <p>WebAgency SAS<br />25 rue d'Hauteville, 75010 PARIS<br />Tél : 01 02 03 04 05</p>
-        <input type="text" name="name" placeholder="Nom" />
-        <input type="text" name="email" placeholder="E-mail" />
-        <input type="text" name="subject" placeholder="Sujet" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <p><a href="#" class="bouton" title="Envoyer votre message">Envoyer</a></p>
-      </form>
-    </div>
-  </section>
+    <!--TODO: PROJETS -->
+    <div id="espaceProjets" class="espace"></div>
+    <section id="projets">
+      <!-- header des projets -->
+      <div class="title">
+        <h1>Nos Projets</h1>
+        <div class="rond_bleu"></div>
+        <p>
+          Fort d'une solide expérience ainsi que d'une équipe jeune et dynamique, nous vous invitons à visiter nos dernières créations.
+        </p>
+      </div>
+      <!-- menu des projets -->
+      <nav>
+        <ul>
+          <div class="block">
+            <li class="active">All Works</li>
+            <i class="activeli my_caret fas fa-caret-down"></i>
+            <li>Creative</li>
+            <i class="my_caret fas fa-caret-down"></i>
+            <li>Corporate</li>
+            <i class="my_caret fas fa-caret-down"></i>
+            <li>Portfolio</li>
+            <i class="my_caret fas fa-caret-down"></i>
+          </div>
+        </ul>
+      </nav>
+      <!-- images du projet -->
+      <div class="exemple">
+        <div class="img_container">
+          <img src="img/01.jpg" alt="visage lunette" />
+           <div class="imgHover inactive">
+             <div class="text">
+               "un site créé par nos mains pour vos yeux"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/02.jpg" alt="lapin rose" />
+           <div class="imgHover">
+             <div class="text">
+               "Site internet pour enfant"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/03.jpg" alt="pompadour" />
+           <div class="imgHover">
+             <div class="text">
+               "Le site internet de Pompadour"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/04.jpg" alt="carnet" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet d'architecte"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/05.jpg" alt="sac" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour vos sacs personnalisés"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/06.jpg" alt="ville" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour voyager"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/07.jpg" alt="fusée" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour décoller"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+        <div class="img_container">
+          <img src="img/08.jpg" alt="fournitures" />
+           <div class="imgHover">
+             <div class="text">
+               "un site internet pour vos fournitures de bureau"
+             </div>
+             <i class="fas fa-eye"></i>
+           </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!--TODO: CONTACT -->
+    <div id="espaceContact" class="espace"></div>
+    <section id="contact">
+      <!-- Carte googleMap -->
+          <iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.431204595463!2d2.345446932492093!3d48.87316630762115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1519204397847" width="100%" height="650" frameborder="0" allowfullscreen></iframe>
+        <!-- Contact sur fond -->
+        <div id="conteneur_contact">
+             <form>
+                <h2>Nous Contacter</h2>
+                <p>WebAgency SAS<br />25 rue d'Hauteville, 75010 PARIS<br />Tél : 01 02 03 04 05</p>
+                <input type="text" name="name" placeholder="Nom"/>
+                <input type="text" name="email" placeholder="E-mail" />
+                <input type="text" name="subject"  placeholder="Sujet"/>
+                <textarea name="message" placeholder="Message"></textarea>
+                <p><a href="#" class="bouton" title="Envoyer votre message">Envoyer</a></p>
+            </form>
+        </div>
+    </section>
 
+  </body>
 </html>

@@ -21,8 +21,13 @@ p {
 
 /* Titre visible au dessus lors de la navigation par le menu */
 
-#services, #projets, #contact {
+.espace {
   padding-top: 120px;
+  margin-top: -120px;
+}
+
+#services, #projets, #contact {
+  padding-top: 20px;
 }
 
 #services h1, #projets h1 {
@@ -334,7 +339,7 @@ header a {
 
 #projets {
   text-align: center;
-  background-color: #E5E7E9;
+  background-color: #f5f5f5;
 }
 
 #projets .title h1 {
@@ -453,7 +458,7 @@ header a {
 /* ------------------- CONTACT ------------------- */
 
 #contact {
-  background-color: #E5E7E9;
+  background-color: #f5f5f5;
 }
 
 #contact {
@@ -467,7 +472,7 @@ header a {
 }
 
 #conteneur_contact {
-  right: 5%;
+  right: 3%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
