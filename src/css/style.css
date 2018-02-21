@@ -331,8 +331,9 @@ header a {
   border-radius: 100%;
   background-color: #53abd9;
   position: absolute;
-  left: -14px;
-  top: 25px;
+  left: -17px;
+  top: 23px;
+  border: 3px solid #fff;
 }
 
 /* ------------------- PROJETS ------------------- */
@@ -659,9 +660,6 @@ textarea {
   .body_slide nav {
     display: none;
     /* Suppression navigation slider */
-  }
-  #services, #projets {
-    padding-top: 100px;
   }
   #projets .img_container {
     width: 50%;
