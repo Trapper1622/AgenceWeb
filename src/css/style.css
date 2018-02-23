@@ -55,7 +55,7 @@ a img {
 #two .dividerBlueRight {
   width: 50%;
   height: 3px;
-  background-color: rgb(92, 173, 211);
+  background-color: #5cadd3;
   opacity: 1;
   position: absolute;
   margin-left: 50%;
@@ -67,7 +67,7 @@ a img {
 .divider {
   width: 60%;
   height: 3px;
-  background-color: #696A6A;
+  background-color: #ebebeb;
   opacity: 0.3;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -80,7 +80,7 @@ a img {
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
-  background: #53abd9;
+  background: #5cadd3;
   border-radius: 50%;
   position: relative;
   border: 3px solid #fff;
@@ -88,7 +88,7 @@ a img {
 
 .rond_bleu::before {
   content: "";
-  border-left: 100px solid #cdcdcd;
+  border-left: 100px solid #d7d7d7;
   height: 1.4px;
   margin-top: 7px;
   position: absolute;
@@ -97,7 +97,7 @@ a img {
 
 .rond_bleu::after {
   content: "";
-  border-right: 100px solid #cdcdcd;
+  border-right: 100px solid #d7d7d7;
   height: 1.4px;
   margin-top: 7px;
   position: absolute;
@@ -112,7 +112,7 @@ header {
   position: fixed;
   z-index: 4;
   height: 100px;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -127,7 +127,7 @@ header ul {
 header a {
   padding: 0px 10px;
   text-decoration: none;
-  color: rgb(80, 80, 80);
+  color: #5d5d5d;
 }
 
 /* sup case sur mobile */
@@ -141,7 +141,7 @@ header a {
 #slider, .slide {
   height: 650px;
   /* Taille slide + menu */
-  color: white;
+  color: #fff;
   font-weight: bold;
   overflow: hidden;
   width: 100%;
@@ -238,7 +238,7 @@ header a {
 }
 
 .text_slide h1 span {
-  color: #53abd9;
+  color: #5cadd3;
   font-size: 45px;
 }
 
@@ -251,10 +251,10 @@ header a {
 
 .text_slide a {
   color: white;
-  background-color: rgb(92, 173, 211);
+  background-color: #5cadd3;
   padding: 10px 15px;
   border-radius: 3px;
-  border-bottom: 3px solid rgb(68, 148, 187);
+  border-bottom: 3px solid #4494bb;
   text-decoration: none;
 }
 
@@ -318,8 +318,8 @@ header a {
 
 #services .fa-cubes, .fa-chart-pie, .fa-chart-line {
   padding: 20px 11px;
-  border: 1px solid #D5DBDB;
-  color: #53abd9;
+  border: 1px solid #d7d7d7;
+  color: #5cadd3;
   border-radius: 100%;
   margin-left: -1.3em;
   margin-top: 1px;
@@ -329,7 +329,7 @@ header a {
   height: 16px;
   width: 16px;
   border-radius: 100%;
-  background-color: #53abd9;
+  background-color: #5cadd3;
   position: absolute;
   left: -17px;
   top: 23px;
@@ -359,49 +359,71 @@ header a {
   margin-right: 25%;
 }
 
-#projets ul {
-  display: inline-block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style-type: none;
-  background-color: #E0E0E0;
-  padding-left: 0px;
-  margin-bottom: 36px;
-  border-radius: 5px;
-  color: #64686D;
-  font-size: 12px;
+/* MENU PROJETS */
+
+/* Concerne la barre de navigation */
+
+#projets nav {
+  height: 40px;
+  width: 30%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
 }
 
-#projets .active {
-  background-color: #53abd9;
-  color: #fff;
-  border-radius: 5px;
-  border-bottom: 2px solid #468CAD;
+#projets ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
 }
 
 #projets li {
-  display: inline-block;
-  padding: 20px 20px 20px 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#projets .block {
-  display: inline-block;
-}
-
-#projets .activeli {
-  opacity: 100 !important;
-}
-
-#projets .my_caret {
-  opacity: 0;
-  color: #468CAD;
+  height: 100%;
+  width: 25%;
+  background-color: #e5e5e5;
+  list-style-type: none;
   position: relative;
-  font-size: 30px;
-  right: 60px;
-  top: 38px;
+  /* Pour positionner la flèche bleue lors du survol */
+}
+
+#projets li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #686c71;
+  text-decoration: none;
+}
+
+#projets nav a:hover {
+  background-color: #5cadd3;
+  box-shadow: 0 -3px #468cad inset;
+  color: #fff;
+  border: 0px;
+  height: 100%;
+}
+
+#projets li:hover .fleche {
+  position: absolute;
+  top: 100%;
+  left: 46%;
+  width: 1px;
+  height: 1px;
+  border-top: 8px #468cad solid;
+  border-left: 7px transparent solid;
+  border-right: 7px transparent solid;
+}
+
+/* border radius sur le coté gauche et droit du menu */
+
+#projets li:nth-child(1) a:hover {
+  border-radius: 4px 0 0 4px;
+}
+
+#projets li:nth-child(4) a:hover {
+  border-radius: 0 4px 4px 0;
 }
 
 #projets .img_container {
@@ -451,7 +473,7 @@ header a {
   color: #fff;
   border: 2px solid #fff;
   border-radius: 52px;
-  background-color: #4794B1;
+  background-color: #4591b1;
   font-size: 15px;
   padding: 15px;
 }
@@ -519,8 +541,8 @@ textarea {
 
 .bouton {
   color: #fff;
-  background-color: rgb(92, 173, 211);
-  border-bottom: 3px solid rgb(70, 140, 173);
+  background-color: #5cadd3;
+  border-bottom: 3px solid #4494bb;
   border-radius: 3px;
   padding: 5px 15px;
   text-decoration: none;
@@ -591,7 +613,7 @@ textarea {
     background-image: linear-gradient(rgb(31, 178, 177), rgb(52, 158, 196));
     width: 40px;
     height: 40px;
-    border-bottom: solid 4px rgb(29, 139, 179);
+    border-bottom: solid 4px #468cad;
     border-radius: 15px;
     margin-right: 10px;
     cursor: pointer;
@@ -682,75 +704,4 @@ textarea {
   header, .header_slide {
     height: 60px;
   }
-}
-
-/* TEST HOVER MENU PROJETS */
-/* Concerne la barre de navigation */
-#projet nav
-{
-	height: 40px;
-	width: 30%;
-	margin-top: 30px;
-	display: flex;
-	align-items: center;
-}
-
-#projet ul
-{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	padding: 0;
-}
-
-#projet li
-{
-	height: 100%;
-	width: 25%;
-	background-color: rgb(229,229,229);
-	list-style-type: none;
-	position: relative; /* Pour positionner la flÃ¨che bleue lors du survol */
-}
-
-#projet li a
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	color: #64686D;
-	text-decoration: none;
-}
-
-#projet nav a:hover
-{
-	background-color: #1CADD3;
-	box-shadow: 0 -3px #468CAD inset;
-	color: white;
-	border: 0px;
-	height: 100%;
-}
-
-
-#projet li:hover .fleche
-{
-	position: absolute;
-	top: 100%;
-	left: 46%;
-	width: 1px;
-	height: 1px;
-	border-top: 8px #468CAD solid;
-	border-left: 7px transparent solid;
-	border-right: 7px transparent solid;
-}
-
-#projet li:nth-child(1) a:hover
-{
-	border-radius: 4px 0 0 4px;
-}
-
-#projet li:nth-child(4) a:hover
-{
-	border-radius: 0 4px 4px 0;
 }
