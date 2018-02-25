@@ -582,6 +582,9 @@ textarea {
   #two .dividerBlueRight {
     top: 447px;
   }
+  #projets nav {
+    width: 40%;
+  }
   #projets .img_container {
     width: 33.33%;
   }
@@ -659,6 +662,9 @@ textarea {
   header nav ul li a {
     color: white;
   }
+  #projets nav {
+    width: 60%;
+  }
 }
 
 /* Sur smartphones */
@@ -683,9 +689,6 @@ textarea {
     display: none;
     /* Suppression navigation slider */
   }
-  #projets .img_container {
-    width: 50%;
-  }
   #services img {
     max-width: 440px;
   }
@@ -696,6 +699,12 @@ textarea {
   #services .services_text {
     margin-top: 70px;
   }
+  #projets .img_container {
+    width: 50%;
+  }
+  #projets nav {
+    width: 80%;
+  }
 }
 
 /* reduction taille menu fixe très petits écrans */
@@ -703,5 +712,8 @@ textarea {
 @media and all (max-width: 380px) {
   header, .header_slide {
     height: 60px;
+  }
+  #projets nav {
+    width: 100%;
   }
 }
