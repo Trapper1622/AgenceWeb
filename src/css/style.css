@@ -35,12 +35,6 @@ p {
   padding-top: 0;
 }
 
-/* Pas de cadre gris sur IE sur img cliquable */
-
-a img {
-  border: 0;
-}
-
 /* trait sous slider */
 
 #one .dividerBlueLeft {
